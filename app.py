@@ -87,18 +87,6 @@ def show_results():
         return jsonify(results)
 
 
-# @app.route('/mail/')
-# def index():
-#     msg = Message(
-#         "Hello Json",
-#         sender='manjatilifechices@gmail.com',
-#         recipients=['manjatilifechoices@gmail.com']
-#     )
-#     msg.body = 'Hello Flask message sent from Flask-Mail'
-#     mail.send(msg)
-#     return 'Sent'
-
-
 def send_mail(name, surname, email, password):
     msg = Message(
         "Confirmation of booking",
